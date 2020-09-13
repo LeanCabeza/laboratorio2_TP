@@ -31,8 +31,7 @@ namespace Entidades
         /// Inicializara un tipo Numero segun el parametro indicado.
         /// </summary>
         /// <param name="numero">El valor con el que se inicia</param>
-        public Numero(double numero)
-            : this(numero.ToString())
+        public Numero(double numero):this(numero.ToString())
         {
 
         }
@@ -143,7 +142,7 @@ namespace Entidades
         /// <param name="num1">Primer numero a sumar</param>
         /// <param name="num2">Segundo numero a sumar</param>
         /// <returns>Resultado de la suma como double</returns>
-        public static double operator +(Numero num1, Numero num2)
+        public static double operator + (Numero num1, Numero num2)
         {
             return num1.numero + num2.numero;
         }
@@ -154,7 +153,7 @@ namespace Entidades
         /// <param name="num1">Primero numero a restar</param>
         /// <param name="num2">Segundo numero a restar</param>
         /// <returns>Resultado de la resta como double</returns>
-        public static double operator -(Numero num1, Numero num2)
+        public static double operator - (Numero num1, Numero num2)
         {
             return num1.numero - num2.numero;
         }
@@ -165,7 +164,7 @@ namespace Entidades
         /// <param name="num1">Primer numero a multiplicar</param>
         /// <param name="num2">Segundo numero a multiplicar</param>
         /// <returns>Resultado de la multiplicacion como double</returns>
-        public static double operator *(Numero num1, Numero num2)
+        public static double operator * (Numero num1, Numero num2)
         {
             return num1.numero * num2.numero;
         }
@@ -177,7 +176,7 @@ namespace Entidades
         /// <param name="num1">Dividendo de la división</param>
         /// <param name="num2">Divisor de la división</param>
         /// <returns>Resultado de la division como double</returns>
-        public static double operator /(Numero num1, Numero num2)
+        public static double operator / (Numero num1, Numero num2)
         {
             double retorno = 0;
 

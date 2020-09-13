@@ -13,11 +13,6 @@ namespace MiCalculadora
 {
     public partial class FormCalculadora : Form
     {
-        Numero num1 = new Numero();
-        Numero num2 = new Numero();
-        string oper;
-        bool flag; // Para controlar los pasajes a bin y decimal
-
         public FormCalculadora()
         {
             InitializeComponent();
@@ -30,26 +25,17 @@ namespace MiCalculadora
         }
 
 
+        Numero num1 = new Numero();
+        Numero num2 = new Numero();
+        string oper;
+        bool flag; // Para controlar los pasajes a bin y decimal
+
         private void btn_Operar_Click(object sender, EventArgs e)
         {
-            lbl_Resultado.Text = Calculadora.Operar(num1, num2, oper).ToString();
+            lbl_Resultado.Text = Calculadora.Operar(num1,num2, oper).ToString();
             flag = false;
-
-        /* Intento de alerta en el front end que fallo , la idea era que al poner un punto en txtBox , tire un msje de alerta.
-         * 
-         
-            foreach (var x in num1.ToString())
-            {
-                if (x.Equals('.'))
-                {
-                  MessageBox.Show("Recorda que para ingresar numeros decimales se usa la (,) , no el punto (.)", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    break;
-                }
-            }
-
-         */
         }
-        
+
         /// <summary>
         /// Reinicia los textbox, combobox y label a su origen.
         /// </summary>
@@ -107,7 +93,7 @@ namespace MiCalculadora
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtNum1_TextChanged(object sender, EventArgs e)
+        private void txtNum1_TextChanged_1(object sender, EventArgs e)
         {
             num1 = new Numero(this.txtNum1.Text);
         }
@@ -124,16 +110,6 @@ namespace MiCalculadora
 
 
         /// <summary>
-        /// Guarda el operador seleccionado en oper.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Cb_Operador_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            oper = Cb_Operador.Text;
-        }
-
-        /// <summary>
         /// Se borra lo que este en txtNum1 y txtNum2.
         /// Se pone el lblResultado en 0.
         /// </summary>
@@ -146,6 +122,12 @@ namespace MiCalculadora
             txtNum2.Text = "";
             Cb_Operador.SelectedIndex = -1;
         }
+
+        private void Cb_Operador_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            oper = Cb_Operador.Text;
+        }
+
     }
 }
       

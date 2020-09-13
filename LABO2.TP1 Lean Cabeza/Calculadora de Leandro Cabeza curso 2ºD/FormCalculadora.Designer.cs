@@ -77,7 +77,7 @@
             this.txtNum1.Name = "txtNum1";
             this.txtNum1.Size = new System.Drawing.Size(84, 30);
             this.txtNum1.TabIndex = 0;
-            this.txtNum1.TextChanged += new System.EventHandler(this.btn_Operar_Click);
+            this.txtNum1.TextChanged += new System.EventHandler(this.txtNum1_TextChanged_1);
             // 
             // btn_Limpiar
             // 

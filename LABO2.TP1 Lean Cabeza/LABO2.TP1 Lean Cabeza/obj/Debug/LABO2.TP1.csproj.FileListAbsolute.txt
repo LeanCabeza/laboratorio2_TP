@@ -1,6 +1,0 @@
-C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\LABO2.TP1 Lean Cabeza\bin\Debug\LABO2.TP1 Lean Cabeza.dll
-C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\LABO2.TP1 Lean Cabeza\bin\Debug\LABO2.TP1 Lean Cabeza.pdb
-C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\LABO2.TP1 Lean Cabeza\obj\Debug\LABO2.TP1.csprojAssemblyReference.cache
-C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\LABO2.TP1 Lean Cabeza\obj\Debug\LABO2.TP1.csproj.CoreCompileInputs.cache
-C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\LABO2.TP1 Lean Cabeza\obj\Debug\LABO2.TP1 Lean Cabeza.dll
-C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\LABO2.TP1 Lean Cabeza\obj\Debug\LABO2.TP1 Lean Cabeza.pdb
