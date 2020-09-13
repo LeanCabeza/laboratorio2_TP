@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{136CF71D-83BC-4F59-9620-1F08AA7E3670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiCalculadora", "Calculadora de Leandro Cabeza curso 2ºD\MiCalculadora.csproj", "{A4DBA9B4-CC55-4CA6-BE1C-67E734A72C95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{136CF71D-83BC-4F59-9620-1F08AA7E3670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136CF71D-83BC-4F59-9620-1F08AA7E3670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136CF71D-83BC-4F59-9620-1F08AA7E3670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136CF71D-83BC-4F59-9620-1F08AA7E3670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4DBA9B4-CC55-4CA6-BE1C-67E734A72C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4DBA9B4-CC55-4CA6-BE1C-67E734A72C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4DBA9B4-CC55-4CA6-BE1C-67E734A72C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4DBA9B4-CC55-4CA6-BE1C-67E734A72C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4061EA12-A98C-4D5A-8E7D-80DBB77C0497}
+	EndGlobalSection
+EndGlobal

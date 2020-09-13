@@ -1,0 +1,14 @@
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\bin\Debug\Calculadora de Leandro Cabeza curso 2ºD.exe.config
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\bin\Debug\Calculadora de Leandro Cabeza curso 2ºD.exe
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\bin\Debug\Calculadora de Leandro Cabeza curso 2ºD.pdb
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\obj\Debug\Calculadora de Leandro Cabeza curso 2ºD.csprojAssemblyReference.cache
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\obj\Debug\Calculadora_de_Leandro_Cabeza_curso_2ºD.Form1.resources
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\obj\Debug\Calculadora_de_Leandro_Cabeza_curso_2ºD.Properties.Resources.resources
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\obj\Debug\Calculadora de Leandro Cabeza curso 2ºD.csproj.GenerateResource.cache
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\obj\Debug\Calculadora de Leandro Cabeza curso 2ºD.csproj.CoreCompileInputs.cache
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\obj\Debug\Calculadora de Leandro Cabeza curso 2ºD.exe
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\obj\Debug\Calculadora de Leandro Cabeza curso 2ºD.pdb
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\bin\Debug\Entidades.exe
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\bin\Debug\Entidades.pdb
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\bin\Debug\Entidades.exe.config
+C:\Users\leand\source\repos\LABO2.TP1 Lean Cabeza\Calculadora de Leandro Cabeza curso 2ºD\obj\Debug\Calculadora de Leandro Cabeza curso 2ºD.csproj.CopyComplete
