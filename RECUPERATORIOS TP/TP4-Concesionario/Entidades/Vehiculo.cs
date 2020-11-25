@@ -18,7 +18,7 @@ namespace Entidades
         {
 
         }
-        protected Vehiculo(string nombreVehiculo, int precio, int anioDeFabricacion, int kilometraje)
+        public Vehiculo(string nombreVehiculo, int precio, int anioDeFabricacion, int kilometraje)
         {
             this.nombreVehiculo = nombreVehiculo;
             this.precio = precio;

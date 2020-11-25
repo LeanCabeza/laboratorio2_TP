@@ -8,10 +8,11 @@ C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\bin\Debug\Entida
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\bin\Debug\Archivo.pdb
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\bin\Debug\Excepciones.pdb
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\Forms.csprojAssemblyReference.cache
-C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4_Concesionario.Form1.resources
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4_Concesionario.Properties.Resources.resources
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\Forms.csproj.GenerateResource.cache
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\Forms.csproj.CoreCompileInputs.cache
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4-Concesionario.exe
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4-Concesionario.pdb
+C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4_Concesionario.FormAgregarAuto.resources
+C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4_Concesionario.FormPrincipal.resources

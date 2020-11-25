@@ -103,25 +103,45 @@ namespace Entidades
                     return auxPedidos.Guardar(path, pedidos);
                 }
 
-        public static bool SerializarPedidosMotos()
-        {
-            string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidosMoto.xml");
-            Xml<List<Moto>> auxPedidos = new Xml<List<Moto>>();
+                public static bool SerializarPedidosMotos()
+                {
+                    string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidosMoto.xml");
+                    Xml<List<Moto>> auxPedidos = new Xml<List<Moto>>();
 
-            List<Moto> pedidos = new List<Moto>();
+                    List<Moto> pedidos = new List<Moto>();
 
-            //pedidos.Add(new Auto("Gol Power", 380000, 2008, 145000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 90));
-            pedidos.Add(new Moto("CG Titan",160000,2020,0,EMarcaMoto.Honda,EEncendido.Carburador,150));
-            //pedidos.Add(new Auto("Bora", 580000, 2012, 50000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 120));
-            pedidos.Add(new Moto("Wave", 100000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador,110));
-            //pedidos.Add(new Auto("Vento", 980000, 2015, 1250000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 160));
-            pedidos.Add(new Moto("Twister", 160000, 2020, 0, EMarcaMoto.Honda, EEncendido.InyeccionElectronica,250));
-            //pedidos.Add(new Auto("Amarok", 2080000, 2020, 2000000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 130));
-            pedidos.Add(new Moto("Tornado",400000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador,250));
+                    //pedidos.Add(new Auto("Gol Power", 380000, 2008, 145000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 90));
+                    pedidos.Add(new Moto("CG Titan",160000,2020,0,EMarcaMoto.Honda,EEncendido.Carburador,150));
+                    //pedidos.Add(new Auto("Bora", 580000, 2012, 50000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 120));
+                    pedidos.Add(new Moto("Wave", 100000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador,110));
+                    //pedidos.Add(new Auto("Vento", 980000, 2015, 1250000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 160));
+                    pedidos.Add(new Moto("Twister", 160000, 2020, 0, EMarcaMoto.Honda, EEncendido.InyeccionElectronica,250));
+                    //pedidos.Add(new Auto("Amarok", 2080000, 2020, 2000000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 130));
+                    pedidos.Add(new Moto("Tornado",400000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador,250));
 
 
-            return auxPedidos.Guardar(path, pedidos);
-        }
+                    return auxPedidos.Guardar(path, pedidos);
+                }
+
+                public static bool SerializarPedidosVehiculos()
+                {
+                    string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidosMotoYAuto.xml");
+                    Xml<List<Vehiculo>> auxPedidos = new Xml<List<Vehiculo>>();
+
+                    List<Vehiculo> pedidos = new List<Vehiculo>();
+
+                    pedidos.Add(new Auto("Gol Power", 380000, 2008, 145000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 90));
+                    pedidos.Add(new Moto("CG Titan", 160000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador, 150));
+                    pedidos.Add(new Auto("Bora", 580000, 2012, 50000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 120));
+                    pedidos.Add(new Moto("Wave", 100000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador, 110));
+                    pedidos.Add(new Auto("Vento", 980000, 2015, 1250000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 160));
+                    pedidos.Add(new Moto("Twister", 160000, 2020, 0, EMarcaMoto.Honda, EEncendido.InyeccionElectronica, 250));
+                    pedidos.Add(new Auto("Amarok", 2080000, 2020, 2000000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 130));
+                    pedidos.Add(new Moto("Tornado", 400000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador, 250));
+
+
+                    return auxPedidos.Guardar(path, pedidos);
+                }
 
     }
 }
