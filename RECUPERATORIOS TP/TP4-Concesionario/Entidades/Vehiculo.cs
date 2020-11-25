@@ -14,6 +14,10 @@ namespace Entidades
         private int kilometraje;
 
         #region Constructor
+        public Vehiculo()
+        {
+
+        }
         protected Vehiculo(string nombreVehiculo, int precio, int anioDeFabricacion, int kilometraje)
         {
             this.nombreVehiculo = nombreVehiculo;

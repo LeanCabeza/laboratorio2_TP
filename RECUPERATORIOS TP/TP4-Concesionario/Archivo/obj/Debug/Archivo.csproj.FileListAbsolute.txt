@@ -1,0 +1,9 @@
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\bin\Debug\Archivo.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\bin\Debug\Archivo.pdb
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\bin\Debug\Excepciones.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\bin\Debug\Excepciones.pdb
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\obj\Debug\Archivo.csprojAssemblyReference.cache
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\obj\Debug\Archivo.csproj.CoreCompileInputs.cache
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\obj\Debug\Archivo.csproj.CopyComplete
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\obj\Debug\Archivo.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Archivo\obj\Debug\Archivo.pdb

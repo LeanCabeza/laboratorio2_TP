@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public enum EMarca
+    public enum EMarcaAuto
     {
         Volkswagen,
         Ford,
@@ -26,12 +26,19 @@ namespace Entidades
     public class Auto : Vehiculo
     {
 
-        private EMarca marcaAuto;
+        private EMarcaAuto marcaAuto;
         private ETipoMotor tipoMotor;
         private int caballosDeFuerza;
 
         #region Constructor
-        public Auto(string nombreVehiculo,int precio, int anioDeFabricacion, int kilometraje, EMarca marcaAuto, ETipoMotor tipoMotor, int caballosDeFuerza)
+
+        //Constructor sin parametros para que me permita serializar largar excepciones.
+        public Auto()
+        {
+
+        }
+
+        public Auto(string nombreVehiculo,int precio, int anioDeFabricacion, int kilometraje, EMarcaAuto marcaAuto, ETipoMotor tipoMotor, int caballosDeFuerza)
                     :base(nombreVehiculo,precio,anioDeFabricacion,kilometraje)
         {
             this.marcaAuto = marcaAuto;
@@ -49,13 +56,13 @@ namespace Entidades
             {
                 switch (marcaAuto)
                 {
-                    case EMarca.Volkswagen:
+                    case EMarcaAuto.Volkswagen:
                         return "Volkswagen";
-                    case EMarca.Ford:
+                    case EMarcaAuto.Ford:
                         return "Ford";
-                    case EMarca.Peugeot:
+                    case EMarcaAuto.Peugeot:
                         return "Peugeot";
-                    case EMarca.Toyota:
+                    case EMarcaAuto.Toyota:
                         return "Toyota";
                     default:
                         return "Indefinido";
@@ -70,9 +77,9 @@ namespace Entidades
                 switch (tipoMotor)
                 {
                     case ETipoMotor.Nafta:
-                        return "Comida Rapida";
+                        return "Nafta";
                     case ETipoMotor.Diesel:
-                        return "Comida Gurmet";  
+                        return "Diesel";  
                     default:
                         return "Indefinido";
                 }

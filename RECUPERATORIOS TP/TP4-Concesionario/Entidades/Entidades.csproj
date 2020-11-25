@@ -49,5 +49,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vehiculo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Archivo\Archivo.csproj">
+      <Project>{81104d2d-dcbe-4745-b9ec-4d8d94ce7c2e}</Project>
+      <Name>Archivo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
