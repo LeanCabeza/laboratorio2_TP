@@ -9,48 +9,84 @@ namespace Entidades
 {
     public static class Concesionario
     {
-        static Queue<Vehiculo> fabricandose;
-        static Queue<Vehiculo> entregado;
+        static Queue<Auto> autoFabricandose;
+        static Queue<Auto> autoEntregado;
+
+        static Queue<Moto> motoFabricandose;
+        static Queue<Moto> motoEntregada;
 
 
         static Concesionario()
         {
-            fabricandose = new Queue<Vehiculo>();
-            entregado = new Queue<Vehiculo>();
+            autoFabricandose = new Queue<Auto>();
+            autoEntregado = new Queue<Auto>();
+
+            motoFabricandose = new Queue<Moto>();
+            motoEntregada = new Queue<Moto>();
+
+
         }
 
-        public static Queue<Vehiculo> Fabricandose
+        public static Queue<Auto> AutoFabricandose
         {
-            get { return fabricandose; }
+            get { return autoFabricandose; }
         }
 
-        public static Queue<Vehiculo> Preparado
+        public static Queue<Moto> MotoFabricandose
         {
-            get { return entregado; }
+            get { return motoFabricandose; }
         }
 
 
+        public static Queue<Auto> AutoEntregado
+        {
+            get { return autoEntregado; }
+        }
 
-        /// <summary>
-        /// Carga los pedidos de vehiculos que estan guardadas en el xml
-        /// </summary>
-        /// <returns></returns>
-        /// 
-        public static bool CargarVehiculosDelXml()
+        public static Queue<Moto> MotoEntregada
+        {
+            get { return motoEntregada; }
+        }
+
+        public static bool CargarMotosDelXml()
         {
 
-            List<Vehiculo> listaAux = new List<Vehiculo>();
+            List<Moto> listaAux = new List<Moto>();
 
-            string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidos.xml");
+            string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidosMoto.xml");
 
-            Xml<List<Vehiculo>> auxPedidos = new Xml<List<Vehiculo>>();
+            Xml<List<Moto>> auxPedidos = new Xml<List<Moto>>();
 
             if (auxPedidos.Leer(path, out listaAux))
             {
                 ///Si entro hasta aca es porque se pudo leer bien el xml ,ahi carga en la cola la lista de vehiculos.
-                foreach (Vehiculo c in listaAux)
+                foreach (Moto m in listaAux)
                 {
-                    fabricandose.Enqueue(c);
+                    motoFabricandose.Enqueue(m);
+                }
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool CargaAutosDelXml()
+        {
+
+            List<Auto> listaAux = new List<Auto>();
+
+            string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidosAutos.xml");
+
+            Xml<List<Auto>> auxPedidos = new Xml<List<Auto>>();
+
+            if (auxPedidos.Leer(path, out listaAux))
+            {
+                ///Si entro hasta aca es porque se pudo leer bien el xml ,ahi carga en la cola la lista de vehiculos.
+                foreach (Auto a in listaAux)
+                {
+                    autoFabricandose.Enqueue(a);
                 }
                 return true;
             }
@@ -67,7 +103,7 @@ namespace Entidades
         /// </summary>
         /// <param name="colaVehiculos"></param>
         /// <returns></returns>
-        public static string Count(this Queue<Vehiculo> colaVehiculos)
+        public static string Count(this Queue<Auto> colaVehiculos)
         {
             int contador = 0;
 
@@ -79,13 +115,26 @@ namespace Entidades
             return contador.ToString();
         }
 
+        public static string Count(this Queue<Moto> colaMotos)
+        {
+            int contador = 0;
 
-  
-         //SERIALIZO PEDIDOS PARA GENERAR EL XML QUE DESPUES VOY A CARGAR :D 
-          
-                public static bool SerializarPedidosAutos()
+            foreach (var c in colaMotos)
+            {
+                contador++;
+            }
+
+            return contador.ToString();
+        }
+
+
+
+
+        //SERIALIZO PEDIDOS PARA GENERAR EL XML QUE DESPUES VOY A CARGAR :D 
+/*
+        public static bool SerializarPedidosAutos()
                 {
-                    string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidos.xml");
+                    string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidosAutos.xml");
                     Xml<List<Auto>> auxPedidos = new Xml<List<Auto>>();
 
                     List<Auto> pedidos = new List<Auto>();
@@ -123,25 +172,6 @@ namespace Entidades
                     return auxPedidos.Guardar(path, pedidos);
                 }
 
-                public static bool SerializarPedidosVehiculos()
-                {
-                    string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "ListaPedidosMotoYAuto.xml");
-                    Xml<List<Vehiculo>> auxPedidos = new Xml<List<Vehiculo>>();
-
-                    List<Vehiculo> pedidos = new List<Vehiculo>();
-
-                    pedidos.Add(new Auto("Gol Power", 380000, 2008, 145000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 90));
-                    pedidos.Add(new Moto("CG Titan", 160000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador, 150));
-                    pedidos.Add(new Auto("Bora", 580000, 2012, 50000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 120));
-                    pedidos.Add(new Moto("Wave", 100000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador, 110));
-                    pedidos.Add(new Auto("Vento", 980000, 2015, 1250000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 160));
-                    pedidos.Add(new Moto("Twister", 160000, 2020, 0, EMarcaMoto.Honda, EEncendido.InyeccionElectronica, 250));
-                    pedidos.Add(new Auto("Amarok", 2080000, 2020, 2000000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 130));
-                    pedidos.Add(new Moto("Tornado", 400000, 2020, 0, EMarcaMoto.Honda, EEncendido.Carburador, 250));
-
-
-                    return auxPedidos.Guardar(path, pedidos);
-                }
-
+        */
     }
 }

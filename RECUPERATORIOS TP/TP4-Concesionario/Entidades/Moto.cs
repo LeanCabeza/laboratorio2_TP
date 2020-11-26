@@ -20,6 +20,9 @@ namespace Entidades
         InyeccionElectronica,
         Indefinido
     }
+
+    [Serializable]
+
     public class Moto :Vehiculo
     {
 

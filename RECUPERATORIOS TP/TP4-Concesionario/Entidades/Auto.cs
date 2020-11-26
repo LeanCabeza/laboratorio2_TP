@@ -22,7 +22,7 @@ namespace Entidades
         Indefinido
     }
 
-
+    [Serializable]
     public class Auto : Vehiculo
     {
 

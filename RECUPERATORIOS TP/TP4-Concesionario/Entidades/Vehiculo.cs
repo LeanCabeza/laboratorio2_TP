@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
+    [XmlInclude(typeof(Auto))]
+    [XmlInclude(typeof(Moto))]
+
+    [Serializable]
     public abstract class Vehiculo
     {
         private string nombreVehiculo;
@@ -32,6 +37,7 @@ namespace Entidades
         public string NombreVehiculo
         {
             get { return this.nombreVehiculo; }
+            set { this.nombreVehiculo = value; }
         }
 
         public int Precio
