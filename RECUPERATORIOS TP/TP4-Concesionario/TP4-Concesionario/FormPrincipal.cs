@@ -21,8 +21,6 @@ namespace TP4_Concesionario
     {
 
         Thread hiloRefresh;
-        Thread hiloAgregarAuto;
-        Thread hiloAgregarMoto;
 
         // Declaro el evento que va imprimir el ticket 
         public event DelegadoTxTAuto txtPrinterAuto;
@@ -47,7 +45,7 @@ namespace TP4_Concesionario
                 }
                 else
                 {
-                    MessageBox.Show(@"No se pueieron crear pedidos por defecto", "Exito", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                    MessageBox.Show(@"No se pueieron crear pedidos por defecto", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
                 }
 
                 RefreshDataGrids();

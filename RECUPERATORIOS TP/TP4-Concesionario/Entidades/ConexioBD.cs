@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using Excepciones;
 
 namespace Entidades
 {
@@ -43,10 +44,9 @@ namespace Entidades
                 }
                 comando.ExecuteNonQuery();
             }
-            catch (System.Exception)
+            catch (Exception e)
             {
-                /// Aca va tirar la excepcion si ponen mal algo en la bdd, mas adelante la tengo que hacer.
-                throw;
+                throw new ArchivoException("Error al intentar conectar con la base de datos", e);
             }
             finally
             {
@@ -79,10 +79,9 @@ namespace Entidades
                 }
                 comando.ExecuteNonQuery();
             }
-            catch (System.Exception)
+            catch (Exception e)
             {
-                /// Aca va tirar la excepcion si ponen mal algo en la bdd, mas adelante la tengo que hacer.
-                throw;
+                throw new ArchivoException("Error al intentar conectar con la base de datos", e);
             }
             finally
             {
