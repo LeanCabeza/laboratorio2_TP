@@ -28,126 +28,229 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cb_Tipo = new System.Windows.Forms.ComboBox();
-            this.btn_AgregarPedido = new System.Windows.Forms.Button();
-            this.tb_precio = new System.Windows.Forms.TextBox();
-            this.lbl_Precio = new System.Windows.Forms.Label();
-            this.lbl_Pedido = new System.Windows.Forms.Label();
-            this.tb_pedido = new System.Windows.Forms.TextBox();
+            this.btn_AgregarPedidoAuto = new System.Windows.Forms.Button();
+            this.tb_precioAuto = new System.Windows.Forms.TextBox();
+            this.lbl_PrecioAuto = new System.Windows.Forms.Label();
+            this.lbl_PedidoAuto = new System.Windows.Forms.Label();
+            this.tb_modeloAuto = new System.Windows.Forms.TextBox();
             this.lbl_ModeloDelAuto = new System.Windows.Forms.Label();
-            this.lbl_Clase = new System.Windows.Forms.Label();
+            this.tb_anioAuto = new System.Windows.Forms.TextBox();
+            this.lbl_AnioAuto = new System.Windows.Forms.Label();
+            this.tb_KilometrajeAuto = new System.Windows.Forms.TextBox();
+            this.lbl_KilometrajeAuto = new System.Windows.Forms.Label();
+            this.cb_marcaAuto = new System.Windows.Forms.ComboBox();
+            this.lbl_MarcaAuto = new System.Windows.Forms.Label();
+            this.cb_TipoMotorAuto = new System.Windows.Forms.ComboBox();
+            this.lbl_TipoMotorAuto = new System.Windows.Forms.Label();
+            this.tb_caballosFuerzaAuto = new System.Windows.Forms.TextBox();
+            this.lbl_CaballosFuerzaAuto = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cb_Tipo
+            // btn_AgregarPedidoAuto
             // 
-            this.cb_Tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_Tipo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Tipo.FormattingEnabled = true;
-            this.cb_Tipo.Items.AddRange(new object[] {
-            "Comida Rapida",
-            "Comida Gurmet",
-            "Postre",
-            "Indefinido"});
-            this.cb_Tipo.Location = new System.Drawing.Point(273, 226);
-            this.cb_Tipo.Name = "cb_Tipo";
-            this.cb_Tipo.Size = new System.Drawing.Size(212, 27);
-            this.cb_Tipo.TabIndex = 54;
+            this.btn_AgregarPedidoAuto.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_AgregarPedidoAuto.Location = new System.Drawing.Point(379, 295);
+            this.btn_AgregarPedidoAuto.Name = "btn_AgregarPedidoAuto";
+            this.btn_AgregarPedidoAuto.Size = new System.Drawing.Size(196, 36);
+            this.btn_AgregarPedidoAuto.TabIndex = 53;
+            this.btn_AgregarPedidoAuto.Text = "Agregar Pedido ";
+            this.btn_AgregarPedidoAuto.UseVisualStyleBackColor = true;
+            this.btn_AgregarPedidoAuto.Click += new System.EventHandler(this.btn_AgregarPedidoAuto_Click);
             // 
-            // btn_AgregarPedido
+            // tb_precioAuto
             // 
-            this.btn_AgregarPedido.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AgregarPedido.Location = new System.Drawing.Point(312, 331);
-            this.btn_AgregarPedido.Name = "btn_AgregarPedido";
-            this.btn_AgregarPedido.Size = new System.Drawing.Size(137, 36);
-            this.btn_AgregarPedido.TabIndex = 53;
-            this.btn_AgregarPedido.Text = "Agregar Pedido";
-            this.btn_AgregarPedido.UseVisualStyleBackColor = true;
+            this.tb_precioAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_precioAuto.Location = new System.Drawing.Point(37, 159);
+            this.tb_precioAuto.Name = "tb_precioAuto";
+            this.tb_precioAuto.Size = new System.Drawing.Size(211, 27);
+            this.tb_precioAuto.TabIndex = 52;
             // 
-            // tb_precio
+            // lbl_PrecioAuto
             // 
-            this.tb_precio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_precio.Location = new System.Drawing.Point(274, 283);
-            this.tb_precio.Name = "tb_precio";
-            this.tb_precio.Size = new System.Drawing.Size(211, 27);
-            this.tb_precio.TabIndex = 52;
+            this.lbl_PrecioAuto.AutoSize = true;
+            this.lbl_PrecioAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PrecioAuto.Location = new System.Drawing.Point(33, 137);
+            this.lbl_PrecioAuto.Name = "lbl_PrecioAuto";
+            this.lbl_PrecioAuto.Size = new System.Drawing.Size(52, 19);
+            this.lbl_PrecioAuto.TabIndex = 51;
+            this.lbl_PrecioAuto.Text = "Precio";
             // 
-            // lbl_Precio
+            // lbl_PedidoAuto
             // 
-            this.lbl_Precio.AutoSize = true;
-            this.lbl_Precio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Precio.Location = new System.Drawing.Point(270, 261);
-            this.lbl_Precio.Name = "lbl_Precio";
-            this.lbl_Precio.Size = new System.Drawing.Size(52, 19);
-            this.lbl_Precio.TabIndex = 51;
-            this.lbl_Precio.Text = "Precio";
+            this.lbl_PedidoAuto.AutoSize = true;
+            this.lbl_PedidoAuto.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PedidoAuto.Location = new System.Drawing.Point(12, 19);
+            this.lbl_PedidoAuto.Name = "lbl_PedidoAuto";
+            this.lbl_PedidoAuto.Size = new System.Drawing.Size(269, 23);
+            this.lbl_PedidoAuto.TabIndex = 50;
+            this.lbl_PedidoAuto.Text = "Formulario de compra auto";
             // 
-            // lbl_Pedido
+            // tb_modeloAuto
             // 
-            this.lbl_Pedido.AutoSize = true;
-            this.lbl_Pedido.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Pedido.Location = new System.Drawing.Point(308, 83);
-            this.lbl_Pedido.Name = "lbl_Pedido";
-            this.lbl_Pedido.Size = new System.Drawing.Size(156, 23);
-            this.lbl_Pedido.TabIndex = 50;
-            this.lbl_Pedido.Text = "Agregar Pedido";
-            // 
-            // tb_pedido
-            // 
-            this.tb_pedido.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_pedido.Location = new System.Drawing.Point(273, 161);
-            this.tb_pedido.Name = "tb_pedido";
-            this.tb_pedido.Size = new System.Drawing.Size(213, 27);
-            this.tb_pedido.TabIndex = 49;
+            this.tb_modeloAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_modeloAuto.Location = new System.Drawing.Point(36, 107);
+            this.tb_modeloAuto.Name = "tb_modeloAuto";
+            this.tb_modeloAuto.Size = new System.Drawing.Size(213, 27);
+            this.tb_modeloAuto.TabIndex = 49;
             // 
             // lbl_ModeloDelAuto
             // 
             this.lbl_ModeloDelAuto.AutoSize = true;
             this.lbl_ModeloDelAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ModeloDelAuto.Location = new System.Drawing.Point(270, 139);
+            this.lbl_ModeloDelAuto.Location = new System.Drawing.Point(33, 85);
             this.lbl_ModeloDelAuto.Name = "lbl_ModeloDelAuto";
             this.lbl_ModeloDelAuto.Size = new System.Drawing.Size(125, 19);
             this.lbl_ModeloDelAuto.TabIndex = 48;
             this.lbl_ModeloDelAuto.Text = "Modelo del Auto";
             // 
-            // lbl_Clase
+            // tb_anioAuto
             // 
-            this.lbl_Clase.AutoSize = true;
-            this.lbl_Clase.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Clase.Location = new System.Drawing.Point(269, 203);
-            this.lbl_Clase.Name = "lbl_Clase";
-            this.lbl_Clase.Size = new System.Drawing.Size(263, 19);
-            this.lbl_Clase.TabIndex = 47;
-            this.lbl_Clase.Text = "Clase a la que pertenece el pedido ?";
+            this.tb_anioAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_anioAuto.Location = new System.Drawing.Point(37, 211);
+            this.tb_anioAuto.Name = "tb_anioAuto";
+            this.tb_anioAuto.Size = new System.Drawing.Size(211, 27);
+            this.tb_anioAuto.TabIndex = 56;
+            // 
+            // lbl_AnioAuto
+            // 
+            this.lbl_AnioAuto.AutoSize = true;
+            this.lbl_AnioAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_AnioAuto.Location = new System.Drawing.Point(37, 189);
+            this.lbl_AnioAuto.Name = "lbl_AnioAuto";
+            this.lbl_AnioAuto.Size = new System.Drawing.Size(122, 19);
+            this.lbl_AnioAuto.TabIndex = 55;
+            this.lbl_AnioAuto.Text = "Año Fabricacion";
+            // 
+            // tb_KilometrajeAuto
+            // 
+            this.tb_KilometrajeAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_KilometrajeAuto.Location = new System.Drawing.Point(37, 263);
+            this.tb_KilometrajeAuto.Name = "tb_KilometrajeAuto";
+            this.tb_KilometrajeAuto.Size = new System.Drawing.Size(211, 27);
+            this.tb_KilometrajeAuto.TabIndex = 58;
+            // 
+            // lbl_KilometrajeAuto
+            // 
+            this.lbl_KilometrajeAuto.AutoSize = true;
+            this.lbl_KilometrajeAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_KilometrajeAuto.Location = new System.Drawing.Point(37, 241);
+            this.lbl_KilometrajeAuto.Name = "lbl_KilometrajeAuto";
+            this.lbl_KilometrajeAuto.Size = new System.Drawing.Size(89, 19);
+            this.lbl_KilometrajeAuto.TabIndex = 57;
+            this.lbl_KilometrajeAuto.Text = "Kilometraje";
+            // 
+            // cb_marcaAuto
+            // 
+            this.cb_marcaAuto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_marcaAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_marcaAuto.FormattingEnabled = true;
+            this.cb_marcaAuto.Items.AddRange(new object[] {
+            "Volkswagen",
+            "Ford",
+            "Peugeot",
+            "Toyota",
+            "Indefinido"});
+            this.cb_marcaAuto.Location = new System.Drawing.Point(315, 107);
+            this.cb_marcaAuto.Name = "cb_marcaAuto";
+            this.cb_marcaAuto.Size = new System.Drawing.Size(212, 27);
+            this.cb_marcaAuto.TabIndex = 60;
+            // 
+            // lbl_MarcaAuto
+            // 
+            this.lbl_MarcaAuto.AutoSize = true;
+            this.lbl_MarcaAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MarcaAuto.Location = new System.Drawing.Point(311, 85);
+            this.lbl_MarcaAuto.Name = "lbl_MarcaAuto";
+            this.lbl_MarcaAuto.Size = new System.Drawing.Size(89, 19);
+            this.lbl_MarcaAuto.TabIndex = 59;
+            this.lbl_MarcaAuto.Text = "Marca Auto";
+            // 
+            // cb_TipoMotorAuto
+            // 
+            this.cb_TipoMotorAuto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_TipoMotorAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_TipoMotorAuto.FormattingEnabled = true;
+            this.cb_TipoMotorAuto.Items.AddRange(new object[] {
+            "Nafta",
+            "Diesel",
+            "Indefinido"});
+            this.cb_TipoMotorAuto.Location = new System.Drawing.Point(314, 159);
+            this.cb_TipoMotorAuto.Name = "cb_TipoMotorAuto";
+            this.cb_TipoMotorAuto.Size = new System.Drawing.Size(212, 27);
+            this.cb_TipoMotorAuto.TabIndex = 62;
+            // 
+            // lbl_TipoMotorAuto
+            // 
+            this.lbl_TipoMotorAuto.AutoSize = true;
+            this.lbl_TipoMotorAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TipoMotorAuto.Location = new System.Drawing.Point(310, 137);
+            this.lbl_TipoMotorAuto.Name = "lbl_TipoMotorAuto";
+            this.lbl_TipoMotorAuto.Size = new System.Drawing.Size(87, 19);
+            this.lbl_TipoMotorAuto.TabIndex = 61;
+            this.lbl_TipoMotorAuto.Text = "Tipo Motor";
+            // 
+            // tb_caballosFuerzaAuto
+            // 
+            this.tb_caballosFuerzaAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_caballosFuerzaAuto.Location = new System.Drawing.Point(316, 211);
+            this.tb_caballosFuerzaAuto.Name = "tb_caballosFuerzaAuto";
+            this.tb_caballosFuerzaAuto.Size = new System.Drawing.Size(211, 27);
+            this.tb_caballosFuerzaAuto.TabIndex = 64;
+            // 
+            // lbl_CaballosFuerzaAuto
+            // 
+            this.lbl_CaballosFuerzaAuto.AutoSize = true;
+            this.lbl_CaballosFuerzaAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CaballosFuerzaAuto.Location = new System.Drawing.Point(310, 189);
+            this.lbl_CaballosFuerzaAuto.Name = "lbl_CaballosFuerzaAuto";
+            this.lbl_CaballosFuerzaAuto.Size = new System.Drawing.Size(141, 19);
+            this.lbl_CaballosFuerzaAuto.TabIndex = 63;
+            this.lbl_CaballosFuerzaAuto.Text = "Caballos de Fuerza";
             // 
             // FormAgregarAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cb_Tipo);
-            this.Controls.Add(this.btn_AgregarPedido);
-            this.Controls.Add(this.tb_precio);
-            this.Controls.Add(this.lbl_Precio);
-            this.Controls.Add(this.lbl_Pedido);
-            this.Controls.Add(this.tb_pedido);
+            this.ClientSize = new System.Drawing.Size(599, 351);
+            this.Controls.Add(this.tb_caballosFuerzaAuto);
+            this.Controls.Add(this.lbl_CaballosFuerzaAuto);
+            this.Controls.Add(this.cb_TipoMotorAuto);
+            this.Controls.Add(this.lbl_TipoMotorAuto);
+            this.Controls.Add(this.cb_marcaAuto);
+            this.Controls.Add(this.lbl_MarcaAuto);
+            this.Controls.Add(this.tb_KilometrajeAuto);
+            this.Controls.Add(this.lbl_KilometrajeAuto);
+            this.Controls.Add(this.tb_anioAuto);
+            this.Controls.Add(this.lbl_AnioAuto);
+            this.Controls.Add(this.btn_AgregarPedidoAuto);
+            this.Controls.Add(this.tb_precioAuto);
+            this.Controls.Add(this.lbl_PrecioAuto);
+            this.Controls.Add(this.lbl_PedidoAuto);
+            this.Controls.Add(this.tb_modeloAuto);
             this.Controls.Add(this.lbl_ModeloDelAuto);
-            this.Controls.Add(this.lbl_Clase);
             this.Name = "FormAgregarAuto";
-            this.Text = "FormAgregarAuto";
+            this.Text = "Comprar Auto";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cb_Tipo;
-        private System.Windows.Forms.Button btn_AgregarPedido;
-        private System.Windows.Forms.TextBox tb_precio;
-        private System.Windows.Forms.Label lbl_Precio;
-        private System.Windows.Forms.Label lbl_Pedido;
-        private System.Windows.Forms.TextBox tb_pedido;
+        private System.Windows.Forms.Button btn_AgregarPedidoAuto;
+        private System.Windows.Forms.TextBox tb_precioAuto;
+        private System.Windows.Forms.Label lbl_PrecioAuto;
+        private System.Windows.Forms.Label lbl_PedidoAuto;
+        private System.Windows.Forms.TextBox tb_modeloAuto;
         private System.Windows.Forms.Label lbl_ModeloDelAuto;
-        private System.Windows.Forms.Label lbl_Clase;
+        private System.Windows.Forms.TextBox tb_anioAuto;
+        private System.Windows.Forms.Label lbl_AnioAuto;
+        private System.Windows.Forms.TextBox tb_KilometrajeAuto;
+        private System.Windows.Forms.Label lbl_KilometrajeAuto;
+        private System.Windows.Forms.ComboBox cb_marcaAuto;
+        private System.Windows.Forms.Label lbl_MarcaAuto;
+        private System.Windows.Forms.ComboBox cb_TipoMotorAuto;
+        private System.Windows.Forms.Label lbl_TipoMotorAuto;
+        private System.Windows.Forms.TextBox tb_caballosFuerzaAuto;
+        private System.Windows.Forms.Label lbl_CaballosFuerzaAuto;
     }
 }

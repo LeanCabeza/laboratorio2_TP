@@ -16,3 +16,6 @@ C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4-Co
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4-Concesionario.pdb
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4_Concesionario.FormAgregarAuto.resources
 C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4_Concesionario.FormPrincipal.resources
+C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\obj\Debug\TP4_Concesionario.FormAgregarMoto.resources
+C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\bin\Debug\Validaciones.dll
+C:\Users\leand\source\repos\TP4-Concesionario\TP4-Concesionario\bin\Debug\Validaciones.pdb

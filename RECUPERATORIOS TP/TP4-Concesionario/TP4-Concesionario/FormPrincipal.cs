@@ -21,7 +21,8 @@ namespace TP4_Concesionario
     {
 
         Thread hiloRefresh;
-        Thread hiloAgregarVehiculo;
+        Thread hiloAgregarAuto;
+        Thread hiloAgregarMoto;
 
         // Declaro el evento que va imprimir el ticket 
         public event DelegadoTxTAuto txtPrinterAuto;
@@ -34,11 +35,6 @@ namespace TP4_Concesionario
         {
             InitializeComponent();
             hiloRefresh = new Thread(this.AutoRefresh);
-            hiloAgregarVehiculo = new Thread(this.AgregarVehiculos);
-
-            hiloAgregarVehiculo.Start();
-
-
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
@@ -46,7 +42,7 @@ namespace TP4_Concesionario
             try
             {
                 if (Concesionario.CargaAutosDelXml() && Concesionario.CargarMotosDelXml())
-               {
+                {
                    MessageBox.Show(@"Se crearon pedidos por defecto", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -54,7 +50,7 @@ namespace TP4_Concesionario
                     MessageBox.Show(@"No se pueieron crear pedidos por defecto", "Exito", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
                 }
 
-               // this.AutoRefresh();
+                RefreshDataGrids();
 
                 //Le asocio el manejador al evento.
                 txtPrinterAuto += GuardaString.GuardarAuto;
@@ -193,10 +189,31 @@ namespace TP4_Concesionario
         }
 
 
-        public void AgregarVehiculos()
+        public void AgregarAuto()
         {
             FormAgregarAuto FormAgregarAuto = new FormAgregarAuto();
             FormAgregarAuto.ShowDialog();
+        }
+
+        public void AgregarMoto()
+        {
+            FormAgregarMoto FormAgregarMoto = new FormAgregarMoto();
+            FormAgregarMoto.ShowDialog();
+        }
+
+        private void btn_AgregarAuto_Click(object sender, EventArgs e)
+        {
+            AgregarAuto();
+        }
+
+        private void btn_AgregarMoto_Click(object sender, EventArgs e)
+        {
+            AgregarMoto();
+        }
+
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+                hiloRefresh.Abort();
         }
 
         private void btn_Pruebas_Click(object sender, EventArgs e)
@@ -209,21 +226,10 @@ namespace TP4_Concesionario
             ConexionBD.SubirAuto(auxAuto);
             ConexionBD.SubirMoto(auxMoto);*/
 
-            // Serialice todo de 10
+            // Serializa todo de 10
             //Concesionario.SerializarPedidosAutos();
             //Concesionario.SerializarPedidosMotos();
 
-        }
-
-        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
-        {
-                hiloAgregarVehiculo.Abort();
-                hiloRefresh.Abort();
-        }
-
-        private void btn_AgregarVehiculo_Click(object sender, EventArgs e)
-        {
-            AgregarVehiculos();
         }
     }
 }

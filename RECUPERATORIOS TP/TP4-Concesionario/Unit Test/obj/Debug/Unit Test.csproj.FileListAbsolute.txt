@@ -1,0 +1,23 @@
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Unit Test.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Unit Test.pdb
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Entidades.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Archivo.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Excepciones.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Entidades.pdb
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Archivo.pdb
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\bin\Debug\Excepciones.pdb
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\obj\Debug\Unit Test.csprojAssemblyReference.cache
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\obj\Debug\Unit Test.csproj.CoreCompileInputs.cache
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\obj\Debug\Unit Test.csproj.CopyComplete
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\obj\Debug\Unit Test.dll
+C:\Users\leand\source\repos\TP4-Concesionario\Unit Test\obj\Debug\Unit Test.pdb

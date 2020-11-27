@@ -52,6 +52,12 @@
     <Compile Include="FormAgregarAuto.Designer.cs">
       <DependentUpon>FormAgregarAuto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAgregarMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgregarMoto.Designer.cs">
+      <DependentUpon>FormAgregarMoto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAgregarAuto.resx">
       <DependentUpon>FormAgregarAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarMoto.resx">
+      <DependentUpon>FormAgregarMoto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
@@ -96,6 +105,10 @@
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{52aa88dd-361d-4c18-91f0-b889926fe1ed}</Project>
       <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validaciones\Validaciones.csproj">
+      <Project>{e4f593df-0dfd-40e0-b687-0c3a35826a09}</Project>
+      <Name>Validaciones</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

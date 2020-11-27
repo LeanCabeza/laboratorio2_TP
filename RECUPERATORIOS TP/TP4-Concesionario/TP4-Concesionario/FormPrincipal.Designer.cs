@@ -34,7 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_NroEntregados = new System.Windows.Forms.Label();
             this.lbl_NroFabricandose = new System.Windows.Forms.Label();
-            this.btn_AgregarVehiculo = new System.Windows.Forms.Button();
+            this.btn_AgregarMoto = new System.Windows.Forms.Button();
             this.lbl_RecaudacionTotal = new System.Windows.Forms.Label();
             this.dgv_AutoEntregados = new System.Windows.Forms.DataGridView();
             this.dgv_AutoFabricandose = new System.Windows.Forms.DataGridView();
@@ -47,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_NroMotosFabricandose = new System.Windows.Forms.Label();
             this.lbl_MotosFabricandose = new System.Windows.Forms.Label();
+            this.btn_AgregarAuto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_AutoEntregados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_AutoFabricandose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_MotoFabricandose)).BeginInit();
@@ -71,22 +72,22 @@
             this.lbl_NroFabricandose.Size = new System.Drawing.Size(0, 19);
             this.lbl_NroFabricandose.TabIndex = 43;
             // 
-            // btn_AgregarVehiculo
+            // btn_AgregarMoto
             // 
-            this.btn_AgregarVehiculo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AgregarVehiculo.Location = new System.Drawing.Point(38, 579);
-            this.btn_AgregarVehiculo.Name = "btn_AgregarVehiculo";
-            this.btn_AgregarVehiculo.Size = new System.Drawing.Size(145, 35);
-            this.btn_AgregarVehiculo.TabIndex = 42;
-            this.btn_AgregarVehiculo.Text = "Agregar Pedido";
-            this.btn_AgregarVehiculo.UseVisualStyleBackColor = true;
-            this.btn_AgregarVehiculo.Click += new System.EventHandler(this.btn_AgregarVehiculo_Click);
+            this.btn_AgregarMoto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AgregarMoto.Location = new System.Drawing.Point(38, 556);
+            this.btn_AgregarMoto.Name = "btn_AgregarMoto";
+            this.btn_AgregarMoto.Size = new System.Drawing.Size(219, 35);
+            this.btn_AgregarMoto.TabIndex = 42;
+            this.btn_AgregarMoto.Text = "Agregar Pedido Moto";
+            this.btn_AgregarMoto.UseVisualStyleBackColor = true;
+            this.btn_AgregarMoto.Click += new System.EventHandler(this.btn_AgregarMoto_Click);
             // 
             // lbl_RecaudacionTotal
             // 
             this.lbl_RecaudacionTotal.AutoSize = true;
             this.lbl_RecaudacionTotal.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RecaudacionTotal.Location = new System.Drawing.Point(534, 579);
+            this.lbl_RecaudacionTotal.Location = new System.Drawing.Point(727, 583);
             this.lbl_RecaudacionTotal.Name = "lbl_RecaudacionTotal";
             this.lbl_RecaudacionTotal.Size = new System.Drawing.Size(233, 29);
             this.lbl_RecaudacionTotal.TabIndex = 41;
@@ -231,11 +232,23 @@
             this.lbl_MotosFabricandose.TabIndex = 50;
             this.lbl_MotosFabricandose.Text = "Motos Fabricandose : ";
             // 
+            // btn_AgregarAuto
+            // 
+            this.btn_AgregarAuto.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AgregarAuto.Location = new System.Drawing.Point(38, 597);
+            this.btn_AgregarAuto.Name = "btn_AgregarAuto";
+            this.btn_AgregarAuto.Size = new System.Drawing.Size(219, 35);
+            this.btn_AgregarAuto.TabIndex = 52;
+            this.btn_AgregarAuto.Text = "Agregar Pedido Auto";
+            this.btn_AgregarAuto.UseVisualStyleBackColor = true;
+            this.btn_AgregarAuto.Click += new System.EventHandler(this.btn_AgregarAuto_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1341, 644);
+            this.ClientSize = new System.Drawing.Size(1318, 644);
+            this.Controls.Add(this.btn_AgregarAuto);
             this.Controls.Add(this.lbl_NroMotosFabricandose);
             this.Controls.Add(this.lbl_MotosFabricandose);
             this.Controls.Add(this.lbl_NroMotosEntregadas);
@@ -245,14 +258,14 @@
             this.Controls.Add(this.btn_Pruebas);
             this.Controls.Add(this.lbl_NroEntregados);
             this.Controls.Add(this.lbl_NroFabricandose);
-            this.Controls.Add(this.btn_AgregarVehiculo);
+            this.Controls.Add(this.btn_AgregarMoto);
             this.Controls.Add(this.lbl_RecaudacionTotal);
             this.Controls.Add(this.dgv_AutoEntregados);
             this.Controls.Add(this.dgv_AutoFabricandose);
             this.Controls.Add(this.lbl_VehiculosEntregados);
             this.Controls.Add(this.lbl_AutosPorEntregar);
             this.Name = "FormPrincipal";
-            this.Text = "FormPrincipal";
+            this.Text = "Concesionario de Leandro Cabeza 2ºD";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_AutoEntregados)).EndInit();
@@ -268,7 +281,7 @@
 
         private System.Windows.Forms.Label lbl_NroEntregados;
         private System.Windows.Forms.Label lbl_NroFabricandose;
-        private System.Windows.Forms.Button btn_AgregarVehiculo;
+        private System.Windows.Forms.Button btn_AgregarMoto;
         private System.Windows.Forms.Label lbl_RecaudacionTotal;
         private System.Windows.Forms.DataGridView dgv_AutoEntregados;
         private System.Windows.Forms.DataGridView dgv_AutoFabricandose;
@@ -281,5 +294,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_NroMotosFabricandose;
         private System.Windows.Forms.Label lbl_MotosFabricandose;
+        private System.Windows.Forms.Button btn_AgregarAuto;
     }
 }

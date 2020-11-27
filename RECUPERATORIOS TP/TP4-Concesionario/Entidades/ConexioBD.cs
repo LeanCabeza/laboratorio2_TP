@@ -33,7 +33,7 @@ namespace Entidades
                 comando.Parameters.Add(new SqlParameter("@anio", auxAuto.AnioDeFabricacion));
                 comando.Parameters.Add(new SqlParameter("@kilometraje", auxAuto.Kilometraje));
                 comando.Parameters.Add(new SqlParameter("@marca", auxAuto.MarcaAuto));
-                comando.Parameters.Add(new SqlParameter("@motor", auxAuto.AnioDeFabricacion));
+                comando.Parameters.Add(new SqlParameter("@motor", auxAuto.TipoMotor));
                 comando.Parameters.Add(new SqlParameter("@caballosDeFuerza", auxAuto.CaballosDeFuerza));
 
 
