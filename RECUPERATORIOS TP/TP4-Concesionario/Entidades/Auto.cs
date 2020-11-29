@@ -32,7 +32,7 @@ namespace Entidades
 
         #region Constructor
 
-        //Constructor sin parametros para que me permita serializar largar excepciones.
+        //Constructor sin parametros para que me permita serializar sin largar excepciones.
         public Auto()
         {
 

@@ -52,7 +52,7 @@
             this.tb_CilindradaMoto.Location = new System.Drawing.Point(339, 215);
             this.tb_CilindradaMoto.Name = "tb_CilindradaMoto";
             this.tb_CilindradaMoto.Size = new System.Drawing.Size(211, 27);
-            this.tb_CilindradaMoto.TabIndex = 80;
+            this.tb_CilindradaMoto.TabIndex = 7;
             // 
             // lbl_CilindradaMoto
             // 
@@ -76,7 +76,7 @@
             this.cb_TipoEncendidoMoto.Location = new System.Drawing.Point(337, 163);
             this.cb_TipoEncendidoMoto.Name = "cb_TipoEncendidoMoto";
             this.cb_TipoEncendidoMoto.Size = new System.Drawing.Size(212, 27);
-            this.cb_TipoEncendidoMoto.TabIndex = 78;
+            this.cb_TipoEncendidoMoto.TabIndex = 6;
             // 
             // lbl_EncendidoMoto
             // 
@@ -101,7 +101,7 @@
             this.cb_MarcaMoto.Location = new System.Drawing.Point(338, 111);
             this.cb_MarcaMoto.Name = "cb_MarcaMoto";
             this.cb_MarcaMoto.Size = new System.Drawing.Size(212, 27);
-            this.cb_MarcaMoto.TabIndex = 76;
+            this.cb_MarcaMoto.TabIndex = 5;
             // 
             // lbl_MarcaMoto
             // 
@@ -119,7 +119,7 @@
             this.tb_KilometrajeMoto.Location = new System.Drawing.Point(60, 267);
             this.tb_KilometrajeMoto.Name = "tb_KilometrajeMoto";
             this.tb_KilometrajeMoto.Size = new System.Drawing.Size(211, 27);
-            this.tb_KilometrajeMoto.TabIndex = 74;
+            this.tb_KilometrajeMoto.TabIndex = 4;
             // 
             // lbl_KilometrajeMoto
             // 
@@ -137,7 +137,7 @@
             this.tb_AniomMoto.Location = new System.Drawing.Point(60, 215);
             this.tb_AniomMoto.Name = "tb_AniomMoto";
             this.tb_AniomMoto.Size = new System.Drawing.Size(211, 27);
-            this.tb_AniomMoto.TabIndex = 72;
+            this.tb_AniomMoto.TabIndex = 3;
             // 
             // lbl_anioMoto
             // 
@@ -166,7 +166,7 @@
             this.tb_precioMoto.Location = new System.Drawing.Point(60, 163);
             this.tb_precioMoto.Name = "tb_precioMoto";
             this.tb_precioMoto.Size = new System.Drawing.Size(211, 27);
-            this.tb_precioMoto.TabIndex = 69;
+            this.tb_precioMoto.TabIndex = 2;
             // 
             // lbl_PrecioMoto
             // 
@@ -194,7 +194,7 @@
             this.tb_modeloMoto.Location = new System.Drawing.Point(59, 111);
             this.tb_modeloMoto.Name = "tb_modeloMoto";
             this.tb_modeloMoto.Size = new System.Drawing.Size(213, 27);
-            this.tb_modeloMoto.TabIndex = 66;
+            this.tb_modeloMoto.TabIndex = 1;
             // 
             // lbl_ModeloMoto
             // 
@@ -210,6 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(629, 352);
             this.Controls.Add(this.tb_CilindradaMoto);
             this.Controls.Add(this.lbl_CilindradaMoto);

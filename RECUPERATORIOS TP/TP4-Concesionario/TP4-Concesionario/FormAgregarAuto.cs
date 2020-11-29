@@ -112,7 +112,7 @@ namespace TP4_Concesionario
                 caballosFuerzaOk = true;
             }
 
-            // Si se pasan las validadciones procedo a crecar
+            // Si se pasan las validadciones procedo a agregar el auto a la queue
 
             if (nombreOk && precioOk && anioFabricacionOk && kilometrajeOk && marcaAutoOk && tipoMotorOk && caballosFuerzaOk)
             {
@@ -128,6 +128,11 @@ namespace TP4_Concesionario
         }
 
 
+        /// <summary>
+        /// Pasa de  String en EMarcaAuto
+        /// </summary>
+        /// <param name="aux"></param>
+        /// <returns>Returba lo ingresado en string como EMarcaAuto</returns>
 
         public static EMarcaAuto MapeoStringEMarcaAuto(string aux)
         {
@@ -146,7 +151,11 @@ namespace TP4_Concesionario
             }
         }
 
-
+        /// <summary>
+        /// Pasa de  String en ETipoMotor
+        /// </summary>
+        /// <param name="aux"></param>
+        /// <returns>Returna lo ingresado en string como ETipoMotor</returns></returns>
         public static ETipoMotor MapeoStringETipoMotor(string aux)
         {
             switch (aux)

@@ -112,7 +112,7 @@ namespace TP4_Concesionario
                 cilindradaOk = true;
             }
 
-            // Si se pasan las validadciones procedo a crecar
+            // Si se pasan las validadciones procedo a crear
 
             if (nombreOk && precioOk && anioFabricacionOk && kilometrajeOk && marcaMotoOk && tipoEncendidoOk && cilindradaOk)
             {
@@ -127,6 +127,11 @@ namespace TP4_Concesionario
 
         }
 
+        /// <summary>
+        /// Si le ingresas una marca en string , la retorna en EMarcaMoto
+        /// </summary>
+        /// <param name="aux"></param>
+        /// <returns>Retorna lo ingresado en string como EMarcaMoto</returns></returns>
         public static EMarcaMoto MapeoStringEMarcaMoto(string aux)
         {
             switch (aux)
@@ -142,6 +147,11 @@ namespace TP4_Concesionario
             }
         }
 
+        /// <summary>
+        /// Si le ingresas un tipo de encedido en string , la retorna en EEncendido
+        /// </summary>
+        /// <param name="aux"></param>
+        /// <returns>Retorna lo ingresado en string como EEncendido</returns></returns>
         public static EEncendido MapeoStringEEncedido(string aux)
         {
             switch (aux)

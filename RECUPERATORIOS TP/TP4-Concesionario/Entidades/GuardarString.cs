@@ -8,8 +8,15 @@ using System.IO;
 
 namespace Entidades
 {
+
+
     public static class GuardaString
     {
+        /// <summary>
+        /// Guarda auto en txt
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True si se pudo guardar correctamente , false de lo contrario </returns>
         public static bool GuardarAuto(Auto obj)
         {
             if (obj != null)
@@ -40,7 +47,11 @@ namespace Entidades
             }
 
         }
-
+        /// <summary>
+        /// Guarda moto en txt
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True si se pudo guardar correctamente , false de lo contrario </returns>
         public static bool GuardarMoto(Moto obj)
         {
             if (obj != null)

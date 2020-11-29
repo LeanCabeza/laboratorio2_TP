@@ -21,6 +21,7 @@ namespace TP4_Concesionario
     {
 
         Thread hiloRefresh;
+        Thread hiloVenta;
 
         // Declaro el evento que va imprimir el ticket 
         public event DelegadoTxTAuto txtPrinterAuto;
@@ -33,6 +34,12 @@ namespace TP4_Concesionario
         {
             InitializeComponent();
             hiloRefresh = new Thread(this.AutoRefresh);
+            hiloVenta = new Thread(this.AgregarAuto);
+            hiloVenta.Start();
+
+            Concesionario.SerializarPedidosMotos();
+            Concesionario.SerializarPedidosAutos();
+
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
@@ -71,6 +78,9 @@ namespace TP4_Concesionario
             }
         }
 
+        /// <summary>
+        /// Refresca automaticamente y en caso de que haya pedidos los processa , actualiza los data grids y suma los totales
+        /// </summary>
         private void AutoRefresh()
         {
             while (true)
@@ -84,8 +94,7 @@ namespace TP4_Concesionario
                     });
                 }
 
-               
-
+       
                 if (Concesionario.AutoFabricandose.Count > 0)
                 {
                     Auto autoAux;
@@ -141,7 +150,7 @@ namespace TP4_Concesionario
                         });
                     }
                 }
-                Thread.Sleep(6000);
+                Thread.Sleep(5500);
             }
         }
 
@@ -186,13 +195,18 @@ namespace TP4_Concesionario
             }
         }
 
-
+        /// <summary>
+        /// Muestra el formulario de agregar auto
+        /// </summary>
         public void AgregarAuto()
         {
             FormAgregarAuto FormAgregarAuto = new FormAgregarAuto();
             FormAgregarAuto.ShowDialog();
         }
 
+        /// <summary>
+        /// Mustra el formulario de agregar Moto
+        /// </summary>
         public void AgregarMoto()
         {
             FormAgregarMoto FormAgregarMoto = new FormAgregarMoto();
@@ -212,22 +226,7 @@ namespace TP4_Concesionario
         private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
                 hiloRefresh.Abort();
-        }
-
-        private void btn_Pruebas_Click(object sender, EventArgs e)
-        {
-            /*  Prueba para ver si sube bien a la bdd.
-                Resultado : Sube Perfecto
-
-             Auto auxAuto = new Auto("Gol Power", 380000, 2008, 145000, EMarcaAuto.Volkswagen, ETipoMotor.Nafta, 90);
-             Moto auxMoto = new Moto("CG Titan",160000,2020,0,EMarcaMoto.Honda,EEncendido.Carburador,150);
-            ConexionBD.SubirAuto(auxAuto);
-            ConexionBD.SubirMoto(auxMoto);*/
-
-            // Serializa todo de 10
-            //Concesionario.SerializarPedidosAutos();
-            //Concesionario.SerializarPedidosMotos();
-
+                hiloVenta.Abort();
         }
     }
 }

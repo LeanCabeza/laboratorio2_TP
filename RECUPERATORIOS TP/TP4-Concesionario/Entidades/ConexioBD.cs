@@ -14,11 +14,18 @@ namespace Entidades
         static SqlConnection conexionBD;
 
 
+        /// <summary>
+        /// Connection string
+        /// </summary>
         static ConexionBD()
         {
             conexionBD = new SqlConnection("Data Source = DESKTOP-DCNPJDC\\SQLEXPRESS ; Initial Catalog = Concesionario;Integrated Security=true");
         }                                                       
    
+        /// <summary>
+        /// Funcion qye sube autos a la bdd 
+        /// </summary>
+        /// <param name="auxAuto">Objeto auto a subir</param>
         public static void SubirAuto(Auto auxAuto)
         {
             try
@@ -54,6 +61,10 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Funcion que sube motos a la bdd
+        /// </summary>
+        /// <param name="auxMoto">Moto a subir a la bdd </param>
         public static void SubirMoto(Moto auxMoto)
         {
             try

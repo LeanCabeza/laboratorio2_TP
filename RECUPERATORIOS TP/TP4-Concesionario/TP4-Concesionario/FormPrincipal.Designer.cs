@@ -40,7 +40,6 @@
             this.dgv_AutoFabricandose = new System.Windows.Forms.DataGridView();
             this.lbl_VehiculosEntregados = new System.Windows.Forms.Label();
             this.lbl_AutosPorEntregar = new System.Windows.Forms.Label();
-            this.btn_Pruebas = new System.Windows.Forms.Button();
             this.dgv_MotoFabricandose = new System.Windows.Forms.DataGridView();
             this.dgv_MotoEntregada = new System.Windows.Forms.DataGridView();
             this.lbl_NroMotosEntregadas = new System.Windows.Forms.Label();
@@ -148,17 +147,6 @@
             this.lbl_AutosPorEntregar.TabIndex = 35;
             this.lbl_AutosPorEntregar.Text = "Autos Fabricandose : ";
             // 
-            // btn_Pruebas
-            // 
-            this.btn_Pruebas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Pruebas.Location = new System.Drawing.Point(372, 484);
-            this.btn_Pruebas.Name = "btn_Pruebas";
-            this.btn_Pruebas.Size = new System.Drawing.Size(345, 28);
-            this.btn_Pruebas.TabIndex = 45;
-            this.btn_Pruebas.Text = "BOTON DE PRUEBAS , PELIGRO!!";
-            this.btn_Pruebas.UseVisualStyleBackColor = true;
-            this.btn_Pruebas.Click += new System.EventHandler(this.btn_Pruebas_Click);
-            // 
             // dgv_MotoFabricandose
             // 
             this.dgv_MotoFabricandose.BackgroundColor = System.Drawing.SystemColors.GrayText;
@@ -247,6 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1318, 644);
             this.Controls.Add(this.btn_AgregarAuto);
             this.Controls.Add(this.lbl_NroMotosFabricandose);
@@ -255,7 +244,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgv_MotoEntregada);
             this.Controls.Add(this.dgv_MotoFabricandose);
-            this.Controls.Add(this.btn_Pruebas);
             this.Controls.Add(this.lbl_NroEntregados);
             this.Controls.Add(this.lbl_NroFabricandose);
             this.Controls.Add(this.btn_AgregarMoto);
@@ -287,7 +275,6 @@
         private System.Windows.Forms.DataGridView dgv_AutoFabricandose;
         private System.Windows.Forms.Label lbl_VehiculosEntregados;
         private System.Windows.Forms.Label lbl_AutosPorEntregar;
-        private System.Windows.Forms.Button btn_Pruebas;
         private System.Windows.Forms.DataGridView dgv_MotoFabricandose;
         private System.Windows.Forms.DataGridView dgv_MotoEntregada;
         private System.Windows.Forms.Label lbl_NroMotosEntregadas;

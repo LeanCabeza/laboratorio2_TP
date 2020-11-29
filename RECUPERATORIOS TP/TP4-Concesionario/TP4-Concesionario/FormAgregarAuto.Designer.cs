@@ -52,7 +52,7 @@
             this.btn_AgregarPedidoAuto.Location = new System.Drawing.Point(379, 295);
             this.btn_AgregarPedidoAuto.Name = "btn_AgregarPedidoAuto";
             this.btn_AgregarPedidoAuto.Size = new System.Drawing.Size(196, 36);
-            this.btn_AgregarPedidoAuto.TabIndex = 53;
+            this.btn_AgregarPedidoAuto.TabIndex = 8;
             this.btn_AgregarPedidoAuto.Text = "Agregar Pedido ";
             this.btn_AgregarPedidoAuto.UseVisualStyleBackColor = true;
             this.btn_AgregarPedidoAuto.Click += new System.EventHandler(this.btn_AgregarPedidoAuto_Click);
@@ -63,7 +63,7 @@
             this.tb_precioAuto.Location = new System.Drawing.Point(37, 159);
             this.tb_precioAuto.Name = "tb_precioAuto";
             this.tb_precioAuto.Size = new System.Drawing.Size(211, 27);
-            this.tb_precioAuto.TabIndex = 52;
+            this.tb_precioAuto.TabIndex = 2;
             // 
             // lbl_PrecioAuto
             // 
@@ -91,7 +91,7 @@
             this.tb_modeloAuto.Location = new System.Drawing.Point(36, 107);
             this.tb_modeloAuto.Name = "tb_modeloAuto";
             this.tb_modeloAuto.Size = new System.Drawing.Size(213, 27);
-            this.tb_modeloAuto.TabIndex = 49;
+            this.tb_modeloAuto.TabIndex = 1;
             // 
             // lbl_ModeloDelAuto
             // 
@@ -109,7 +109,7 @@
             this.tb_anioAuto.Location = new System.Drawing.Point(37, 211);
             this.tb_anioAuto.Name = "tb_anioAuto";
             this.tb_anioAuto.Size = new System.Drawing.Size(211, 27);
-            this.tb_anioAuto.TabIndex = 56;
+            this.tb_anioAuto.TabIndex = 3;
             // 
             // lbl_AnioAuto
             // 
@@ -127,7 +127,7 @@
             this.tb_KilometrajeAuto.Location = new System.Drawing.Point(37, 263);
             this.tb_KilometrajeAuto.Name = "tb_KilometrajeAuto";
             this.tb_KilometrajeAuto.Size = new System.Drawing.Size(211, 27);
-            this.tb_KilometrajeAuto.TabIndex = 58;
+            this.tb_KilometrajeAuto.TabIndex = 4;
             // 
             // lbl_KilometrajeAuto
             // 
@@ -153,7 +153,7 @@
             this.cb_marcaAuto.Location = new System.Drawing.Point(315, 107);
             this.cb_marcaAuto.Name = "cb_marcaAuto";
             this.cb_marcaAuto.Size = new System.Drawing.Size(212, 27);
-            this.cb_marcaAuto.TabIndex = 60;
+            this.cb_marcaAuto.TabIndex = 5;
             // 
             // lbl_MarcaAuto
             // 
@@ -177,7 +177,7 @@
             this.cb_TipoMotorAuto.Location = new System.Drawing.Point(314, 159);
             this.cb_TipoMotorAuto.Name = "cb_TipoMotorAuto";
             this.cb_TipoMotorAuto.Size = new System.Drawing.Size(212, 27);
-            this.cb_TipoMotorAuto.TabIndex = 62;
+            this.cb_TipoMotorAuto.TabIndex = 6;
             // 
             // lbl_TipoMotorAuto
             // 
@@ -195,7 +195,7 @@
             this.tb_caballosFuerzaAuto.Location = new System.Drawing.Point(316, 211);
             this.tb_caballosFuerzaAuto.Name = "tb_caballosFuerzaAuto";
             this.tb_caballosFuerzaAuto.Size = new System.Drawing.Size(211, 27);
-            this.tb_caballosFuerzaAuto.TabIndex = 64;
+            this.tb_caballosFuerzaAuto.TabIndex = 7;
             // 
             // lbl_CaballosFuerzaAuto
             // 
@@ -211,6 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(599, 351);
             this.Controls.Add(this.tb_caballosFuerzaAuto);
             this.Controls.Add(this.lbl_CaballosFuerzaAuto);
